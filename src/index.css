@@ -1,0 +1,177 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Reset default styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+}
+
+/* Body styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Container styles */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header styles */
+.header {
+  background-color: #333; /* Dark gray background */
+  color: #fff; /* White text color */
+  text-align: center;
+  padding: 20px 0;
+}
+
+.header h1 {
+  font-size: 42px;
+}
+
+/* Planets list styles */
+.planets-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* Planet card styles */
+.planet-card {
+  width: calc(33.33% - 20px); /* Adjust based on desired layout */
+  background-color: #eee1;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.planet-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: transparent red;
+
+}
+
+.planet-card h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.planet-card p {
+  margin-bottom: 5px;
+}
+
+/* Load More button styles */
+.load-more-button {
+  display: block;
+  width: 100%;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 12px 0;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.load-more-button:hover {
+  background-color: #0056b3;
+}
+
+/* Adjust styling for resident list */
+.resident-list {
+  margin-top: 15px;
+}
+
+.planet-card h3{
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.planet-card ul{
+  padding: 0;
+  margin: 0;
+}
+
+.resident-list li{
+  list-style: none;
+  border-bottom: 1.5px solid #232020;
+  padding: 10px 0;
+}
+
+.resident-list li:last-child{
+  border-bottom: none; /* Remove border for last item */
+}
+
+.resident-list p strong  {
+  font-weight: bold;
+  color: #5209a0; /* Blue color for labels */
+  align-items: center;
+  justify-content: center;
+}
+
+.planet-card p {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #666;
+}
+
+.pagination-button {
+  padding: 10px 20px;
+  background-color: #da1a1a;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pagination-button:hover {
+  background-color: #0056b3;
+}
+
+.pagination-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.pagination-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+
+@media screen and (max-width: 768px) {
+  .planet-card {
+    width: calc(50% - 20px);
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .planet-card {
+    width: 100%;
+  }
+}
+
